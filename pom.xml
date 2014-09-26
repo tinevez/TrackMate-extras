@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+    http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>sc.fiji</groupId>
+		<artifactId>pom-fiji</artifactId>
+		<version>2.0.0-beta-1-SNAPSHOT</version>
+		<relativePath />
+	</parent>
+
+	<artifactId>TrackMate_extras</artifactId>
+	<version>0.0.1</version>
+
+	<name>plugins/TrackMate_extras.jar</name>
+	<description>TrackMate extra modules.</description>
+
+	<developers>
+		<developer>
+			<id>tinevez</id>
+			<name>Jean-Yves Tinevez</name>
+			<email>jean-yves.tinevez@pasteur.fr</email>
+			<url>http://www.pasteur.fr/ip/easysite/pasteur/fr/recherche/plates-formes-technologiques/imagopole/plates-formes-imagopole/la-plate-forme-d-imagerie-dynamique/equipe-pfid/equipe-pfid-jyt</url>
+			<organization>Institut Pasteur</organization>
+			<organizationUrl>http://www.pasteur.fr/</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+	</developers>
+
+	<properties>
+		<imagej.app.directory>../Fiji.app/</imagej.app.directory>
+	</properties>
+
+	<repositories>
+		<!-- NB: for project parent -->
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<scm>
+		<connection>scm:git:git://github.com/fiji/TrackMate-extras</connection>
+		<developerConnection>scm:git:git@github.com:fiji/TrackMate-extras</developerConnection>
+		<tag>HEAD</tag>
+		<url>scm:git:git@github.com:fiji/TrackMate-extras</url>
+	</scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>sc.fiji</groupId>
+			<artifactId>TrackMate_</artifactId>
+		</dependency>
+	</dependencies>
+</project>
+
