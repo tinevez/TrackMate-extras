@@ -6,7 +6,7 @@ import static plugin.trackmate.extra.spotanalyzer.SpotMultiChannelIntensityAnaly
 
 import java.util.Iterator;
 
-import net.imglib2.meta.ImgPlus;
+import net.imagej.ImgPlus;
 import net.imglib2.type.numeric.RealType;
 import net.imglib2.meta.view.HyperSliceImgPlus;
 //import net.imglib2.util.Util;

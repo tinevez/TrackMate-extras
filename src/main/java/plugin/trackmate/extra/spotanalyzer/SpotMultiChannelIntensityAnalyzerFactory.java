@@ -8,9 +8,13 @@ import java.util.Map;
 
 import javax.swing.ImageIcon;
 
-import net.imglib2.meta.Axes;
-import net.imglib2.meta.ImgPlus;
+
+//import net.imglib2.meta.ImgPlus;
+import net.imagej.ImgPlus;
 import net.imglib2.meta.view.HyperSliceImgPlus;
+import net.imagej.axis.AxisType;
+import net.imagej.axis.Axes;
+
 import net.imglib2.type.NativeType;
 import net.imglib2.type.numeric.RealType;
 
@@ -69,7 +73,8 @@ public class SpotMultiChannelIntensityAnalyzerFactory< T extends RealType< T > &
 		// determine the number of channel
 		long[] dimensions = new long[ img.numDimensions() ]; 
 		img.dimensions(dimensions);
-		int ch_dim = img.dimensionIndex(Axes.CHANNEL);
+		//int ch_dim = img.dimensionIndex(Axis .CHANNEL);
+		int ch_dim = img.dimensionIndex((AxisType)Axes.CHANNEL);
 		int nCh=1;
 		if (ch_dim>=0)
 			nCh = (int)dimensions[ch_dim];
