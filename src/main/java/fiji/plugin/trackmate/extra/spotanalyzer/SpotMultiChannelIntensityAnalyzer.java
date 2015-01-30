@@ -1,7 +1,7 @@
-package plugin.trackmate.extra.spotanalyzer;
+package fiji.plugin.trackmate.extra.spotanalyzer;
 
 
-import static plugin.trackmate.extra.spotanalyzer.SpotMultiChannelIntensityAnalyzerFactory.FEATURES;
+import static fiji.plugin.trackmate.extra.spotanalyzer.SpotMultiChannelIntensityAnalyzerFactory.FEATURES;
 //import ij.IJ;
 
 import java.util.Iterator;
