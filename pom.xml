@@ -7,16 +7,27 @@
 	<parent>
 		<groupId>sc.fiji</groupId>
 		<artifactId>pom-fiji</artifactId>
-		<version>6.3.0</version>
+		<version>24.1.0</version>
 		<relativePath />
 	</parent>
 
 	<artifactId>TrackMate_extras</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 
 	<name>plugins/TrackMate_extras.jar</name>
 	<description>TrackMate extra modules.</description>
 
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 	<developers>
 		<developer>
 			<id>tinevez</id>
