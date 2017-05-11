@@ -61,7 +61,8 @@
 		<url>https://github.com/tinevez/TrackMate-extras/issues</url>
 	</issueManagement>
 	<ciManagement>
-		<system>None</system>
+		<system>Travis CI</system>
+		<url>https://travis-ci.org/tinevez/TrackMate-extras</url>
 	</ciManagement>
 
 	<properties>
