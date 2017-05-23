@@ -12,7 +12,7 @@
 	</parent>
 
 	<artifactId>TrackMate_extras</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4</version>
 
 	<name>plugins/TrackMate_extras.jar</name>
 	<description>TrackMate extra modules.</description>
