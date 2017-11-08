@@ -83,10 +83,10 @@
 	</repositories>
 
 	<scm>
-		<connection>scm:git:git://github.com/fiji/TrackMate-extras</connection>
-		<developerConnection>scm:git:git@github.com:fiji/TrackMate-extras</developerConnection>
+		<connection>scm:git:git://github.com/tinevez/TrackMate-extras</connection>
+		<developerConnection>scm:git:git@github.com:tinevez/TrackMate-extras</developerConnection>
 		<tag>HEAD</tag>
-		<url>scm:git:git@github.com:fiji/TrackMate-extras</url>
+		<url>scm:git:git@github.com:tinevez/TrackMate-extras</url>
 	</scm>
 
 	<dependencies>
