@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>13.0.0</version>
+		<version>17.1.1</version>
 		<relativePath />
 	</parent>
 
@@ -69,6 +69,9 @@
 		<imagej.app.directory>../Fiji.app/</imagej.app.directory>
 		<license.licenseName>GPL_3</license.licenseName>
 		<license.copyrightOwners>My Company, Inc.</license.copyrightOwners>
+
+		<!-- NB: Deploy releases to the ImageJ Maven repository. -->
+		<releaseProfiles>deploy-to-imagej</releaseProfiles>
 	</properties>
 
 	<repositories>
@@ -80,10 +83,10 @@
 	</repositories>
 
 	<scm>
-		<connection>scm:git:git://github.com/fiji/TrackMate-extras</connection>
-		<developerConnection>scm:git:git@github.com:fiji/TrackMate-extras</developerConnection>
+		<connection>scm:git:git://github.com/tinevez/TrackMate-extras</connection>
+		<developerConnection>scm:git:git@github.com:tinevez/TrackMate-extras</developerConnection>
 		<tag>HEAD</tag>
-		<url>scm:git:git@github.com:fiji/TrackMate-extras</url>
+		<url>scm:git:git@github.com:tinevez/TrackMate-extras</url>
 	</scm>
 
 	<dependencies>
