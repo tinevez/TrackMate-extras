@@ -57,6 +57,8 @@ public class EllipseRoiExporter extends AbstractTMAction
 		}
 
 		double dx = imp.getCalibration().pixelWidth;
+		double dy = imp.getCalibration().pixelHeight;
+		double dz = imp.getCalibration().pixelDepth;
 
 		// Get RoiManager instance
 		RoiManager roiManager = RoiManager.getInstance();
@@ -73,9 +75,9 @@ public class EllipseRoiExporter extends AbstractTMAction
 			double radius = spot.getFeature( Spot.RADIUS ) / dx;
 
 			// Get position
-			double positionX = spot.getFeature( Spot.POSITION_X ) + 0.5;
-			double positionY = spot.getFeature( Spot.POSITION_Y ) + 0.5;
-			double positionZ = spot.getFeature( Spot.POSITION_Z );
+			double positionX = spot.getFeature( Spot.POSITION_X ) / dx + 0.5;
+			double positionY = spot.getFeature( Spot.POSITION_Y ) / dy + 0.5;
+			double positionZ = spot.getFeature( Spot.POSITION_Z ) / dz;
 			double frame = spot.getFeature( Spot.FRAME ) + 1;
 
 			double x1 = positionX - radius;
