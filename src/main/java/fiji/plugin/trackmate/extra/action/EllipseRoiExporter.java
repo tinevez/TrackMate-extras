@@ -31,7 +31,7 @@ public class EllipseRoiExporter extends AbstractTMAction
 
 	public static final ImageIcon ICON = new ImageIcon( EllipseRoiExporter.class.getResource( "EllipseRoiIcon.png" ) );
 
-	public static final String NAME = "Export visiable spots to Ellipse ROIs";
+	public static final String NAME = "Export visible spots to Ellipse ROIs";
 
 	public static final String KEY = "EXPORT_TO_IJ_ELLIPSE_ROIS";
 
