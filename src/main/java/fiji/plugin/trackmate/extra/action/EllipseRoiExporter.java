@@ -78,7 +78,7 @@ public class EllipseRoiExporter extends AbstractTMAction
 			double positionX = spot.getFeature( Spot.POSITION_X ) / dx + 0.5;
 			double positionY = spot.getFeature( Spot.POSITION_Y ) / dy + 0.5;
 			double positionZ = spot.getFeature( Spot.POSITION_Z ) / dz;
-			double frame = spot.getFeature( Spot.FRAME ) + 1;
+			double frame = spot.getFeature( Spot.FRAME );
 
 			double x1 = positionX - radius;
 			double x2 = positionX + radius;
@@ -88,12 +88,12 @@ public class EllipseRoiExporter extends AbstractTMAction
 			if ( imp.isHyperStack() )
 			{
 				// Set ROI's position for hyperstack
-				roi.setPosition( 0, ( int ) positionZ, ( int ) frame );
+				roi.setPosition( 0, ( int ) positionZ + 1, ( int ) frame + 1 );
 			}
 			else
 			{
 				// Set ROI's position for regular stack
-				roi.setPosition( ( int ) frame );
+				roi.setPosition( ( int ) frame + 1 );
 			}
 
 			roiManager.addRoi( roi );
