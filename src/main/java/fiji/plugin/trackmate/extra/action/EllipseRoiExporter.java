@@ -84,18 +84,18 @@ public class EllipseRoiExporter extends AbstractTMAction
 			double x2 = positionX + radius;
 			double y1 = positionY;
 			double y2 = positionY;
-			Roi roi = new EllipseRoi( x1, y1, x2, y2, 1d ) ;
+			Roi roi = new EllipseRoi( x1, y1, x2, y2, 1d );
+
 			if ( imp.isHyperStack() )
 			{
 				// Set ROI's position for hyperstack
-				roi.setPosition( 0, ( int ) positionZ + 1, ( int ) frame + 1 );
+				imp.setPositionWithoutUpdate( 0, ( int ) positionZ + 1, ( int ) frame + 1 );
 			}
 			else
 			{
 				// Set ROI's position for regular stack
-				roi.setPosition( ( int ) frame + 1 );
+				imp.setSliceWithoutUpdate( ( int ) frame + 1 );
 			}
-
 			roiManager.addRoi( roi );
 		}
 		logger.log( " Done.\n" );
